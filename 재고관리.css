@@ -1,0 +1,50 @@
+h1{
+  text-align: center;
+  padding-top: 32px;
+}
+
+input{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: left;
+  width: 200px;
+}
+
+table{
+  display: flex;
+  justify-content: center;
+  border-spacing: 12px;
+  /* border-collapse: collapse; */
+}
+
+container{
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  padding-top: 24px;
+}
+
+button{
+  padding: 12px 24px;
+  border-style: none;
+}
+
+.button-1{
+  background-color: blue; 
+  color: white;
+}
+
+.button-2{
+  background-color: lightgray;
+}
+
+.align-center{
+  display: flex;
+  justify-content: center;
+}
+
+/* th, td {
+  border: 1px solid black;
+  width: 100px;
+  padding: 8px;
+} */

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="EUC-KR">
+  <title>index</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+
+    header,
+    footer {
+      width: 100vw;
+      background-color: blue;
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      /* padding: 12px; */
+
+    }
+
+    footer {
+      text-align: right;
+      /* padding: 12px; */
+    }
+
+    section {
+      background-color: lightgrey;
+      width: 100vw;
+      /* padding: 16px; */
+    }
+
+
+    nav {
+      background-color: lightblue;
+      width: 100vw;
+    }
+
+    li {
+      display: inline-block;
+      padding: 16px;
+    }
+
+    .inline-box {
+      display: inline-block;
+    }
+
+    button {
+      margin-top: 8px;
+      padding: 4px 8px;
+    }
+
+    container {
+      display: flex;
+    }
+
+    .container p,
+    .container input {
+      display: inline-block;
+    }
+
+    /* section>.container>input{
+      margin-left: 80px;
+    } */
+
+    td{
+      padding-left: 12px;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>쇼핑몰 회원관리 ver 1.0</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">회원등록</a></li>
+      <li><a href="#">회원목록조회/수정</a></li>
+      <li><a href="#">회원매출조회</a></li>
+      <li><a href="#">홈으로</a></li>
+    </ul>
+  </nav>
+  <section>
+    <h1>홈쇼핑 회원 등록</h1><br>
+  
+
+    <table>
+      <tr>
+        <td>회원번호(자동등록)</td>
+        <td><input></td>
+      </tr>
+      <tr>
+        <td>회원성명</td>
+        <td><input></td>
+      </tr>
+      <tr>
+        <td>회원전화</td>
+        <td><input></td>
+      </tr>
+      <tr>
+        <td>회원주소</td>
+        <td><input></td>
+      </tr>
+      <tr>
+        <td>가입일자</td>
+        <td><input></td>
+      </tr>
+      <tr>
+        <td>고객등급[A:VIP,B:일반,C:직원]</td>
+        <td><input></td>
+      </tr>
+      <tr>
+        <td>도시코드</td>
+        <td><input></td>
+      </tr>
+    </table>
+
+    <div class="inline-box">
+      <button>등록</button>
+      <button>조회</button>
+    </div>
+
+  </section>
+  <footer>HRDKOREA Copyright©2016 All rights reserved. human Resources Development Service of Korea.</footer>
+</body>
+
+</html>
