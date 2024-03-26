@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function getData(callback) {
+      name = prompt('이름을 입력해주세요');
+      age = prompt('나이를 입력해주세요');
+      callback(name, age);
+
+}
+    function showData(name, age) {
+      alert(name + ': ' + age);
+    }
+    getData(showData);
+
+  </script>
+</body>
+
+</html>
