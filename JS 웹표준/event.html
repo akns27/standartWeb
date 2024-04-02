@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>event</title>
+  <script defer src="./event.js"></script>
+</head>
+<body onload="alert('웹 페이지 로딩 완료!')">
+
+
+
+  <h1>회원가입</h1>
+  <form id="loginFrm">
+  <label>아이디 : <input type="text" id="id"></label><br>
+  <label>비밀번호 : <input type="password" id="pwd"></label><br>
+  <label>비밀번호 재확인 : <input type="password" id="checkPwd"></label>
+  <input type="button" value="비밀번호 확인" id="checkPwdBtn">
+  <br>
+  성별 :
+  <label>남<input type="radio" name="gender"></input></label>
+  <label>여<input type="radio" name="gender"></input></label><br>
+
+  <input type="button" value="초기화" onclick="reset()">
+  <input type="button" value="확인 후 제출" onclick="check()">
+
+</form>
+</body>
+</html>
