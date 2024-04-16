@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>연습문제 2</title>
+  <style>
+    #container {
+      width: 520px;
+      border: 1px solid black;
+      padding: 20px 40px;
+      margin: 0 auto;
+    }
+
+    fieldset {
+      margin-bottom: 15px;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    li {
+      line-height: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <h1>프런트엔드 개발자 지원서 </h1>
+    <p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+    <hr>
+
+    <form>
+
+        <fieldset>
+          <legend>개인정보</legend>
+          <ul>
+            <li><label for="name" type="text">이름</label>
+              <input type="text" id="name" placeholder="공백없이 입력하세요">
+            </li>
+            <li></li><label for="phone">연락처</label>
+            <input type="tel" id="phone"></li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>지원 분야</legend>
+          <ul>
+            <li>
+              <input id="publishing" type="radio" name="job">
+              <label for="male">웹 퍼블리싱</label>
+            </li>
+            <li>
+              <input id="webapp" type="radio" name="job">
+              <label for="webapp">웹 어플리케이션 개발</label>
+            </li>
+            <li>
+              <input id="improve" type="radio" name="job">
+              <label for="improve">개발 환경 개선</label>
+            </li>
+          </ul>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>지원동기</legend>
+          <textarea rows="5" cols="60" placeholder="지원동기를 간략히 써주세요."></textarea>
+        </fieldset>
+
+        <input type="submit" value="접수하기">
+
+    </form>
+  </div>
+</body>
+
+</html>

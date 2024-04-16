@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>checkList</title>
+</head>
+<body>
+  <h1>체크리스트</h1>
+  <div id = "checkList">체크리스트를 추가하세요!</div>
+  <button onclick="createDIV()">추가하기</button>
+  <button onclick="deleteDIV()">삭제하기</button>
+  <script>
+    const p = document.getElementById("checkList");
+    function createDIV(){
+      const newDIV = document.createElement("div");
+      newDIV.innerHTML=prompt("체크리스트 내용을 입력하세요.");
+      newDIV.setAttribute("class", "newlist");
+      newDIV.style.backgroundColor = "lightgray";
+      p.appendChild(newDIV);
+    }
+    function deleteDIV(){
+      const listArr = document.getElementsByClassName("newlist");
+      p.removeChild(listArr[0]);
+    }
+  </script>
+</body>
+</html>
