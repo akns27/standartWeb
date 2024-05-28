@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>관광정보</title>
+  <link rel="stylesheet" href="./css/tour.css">
+  <script src="./js/tour.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <form name="city">
+      <fieldset>
+        <legend> 도시 정보 </legend>
+        <table id="cityinfo">
+          <tr>
+            <td><label class="field" for="citycode">도시</label></td>
+            <td><select class="citycode" id="citycode">
+                <option>--- 도시 선택 ---</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label class="field" for="areacode">지역</label></td>
+            <td><select class="areacode" id="areacode">
+                <option>--- 지역 선택 ---</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label class="field" for="tourcode">관광타입</label></td>
+            <td><select class="tourcode" id="tourcode">
+                <option>--- 관광 타입 선택 ---</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label class="field" for="category1">대분류</label></td>
+            <td><select class="category1" id="category1">
+                <option>--- 대분류 선택 선택 ---</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label class="field" for="category2">중분류</label></td>
+            <td><select class="category2" id="category2">
+                <option>--- 중분류 선택 선택 ---</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label class="field" for="category3">소분류</label></td>
+            <td><select class="category3" id="category3">
+                <option>--- 소분류 선택 선택 ---</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2" align="center">
+              <button type="button" class="areaBtn" id="areaBtn">지역조회</button>
+              <button type="button" class="typeBtn" id="typeBtn">수행평가</button>
+            </td>
+          </tr>
+        </table>
+
+      </fieldset>
+
+    </form>
+  </div>
+
+</body>
+
+</html>
